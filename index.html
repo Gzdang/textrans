@@ -1,137 +1,160 @@
+<html>
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./static/js/jsapi" type="text/javascript"></script> 
-<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="./static/js/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
-<style type="text/css">
-	body {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		font-weight:300;
-		font-size:18px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 1100px;
-	}
-	
-	h1 {
-		font-size:24px;
-		font-weight:300;
-	}
-	
-	.disclaimerbox {
-		background-color: #eee;		
-		border: 1px solid #eeeeee;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-		padding: 20px;
-	}
+	<style type="text/css">
+		body {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 1100px;
+		}
 
-	video.header-vid {
-		height: 140px;
-		border: 1px solid black;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
-	
-	img.header-img {
-		height: 140px;
-		border: 1px solid black;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
-	
-	img.rounded {
-		border: 1px solid #eeeeee;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
-	
-	a:link,a:visited
-	{
-		color: #1367a7;
-		text-decoration: none;
-	}
-	a:hover {
-		color: #208799;
-	}
-	
-	td.dl-link {
-		height: 160px;
-		text-align: center;
-		font-size: 22px;
-	}
-	
-	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-		5px 5px 0 0px #fff, /* The second layer */
-		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-		10px 10px 0 0px #fff, /* The third layer */
-		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-		15px 15px 0 0px #fff, /* The fourth layer */
-		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-		20px 20px 0 0px #fff, /* The fifth layer */
-		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-		25px 25px 0 0px #fff, /* The fifth layer */
-		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-		margin-left: 10px;
-		margin-right: 45px;
-	}
+		h1 {
+			font-size: 24px;
+			font-weight: 300;
+		}
 
-	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
+		.disclaimerbox {
+			background-color: #eee;
+			border: 1px solid #eeeeee;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			padding: 20px;
+		}
 
-		margin-left: 10px;
-		margin-right: 45px;
-	}
+		video.header-vid {
+			height: 140px;
+			border: 1px solid black;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+		}
+
+		img.header-img {
+			height: 140px;
+			border: 1px solid black;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+		}
+
+		img.rounded {
+			border: 1px solid #eeeeee;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+		}
+
+		a:link,
+		a:visited {
+			color: #1367a7;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #208799;
+		}
+
+		td.dl-link {
+			height: 160px;
+			text-align: center;
+			font-size: 22px;
+		}
+
+		.layered-paper-big {
+			/* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+			box-shadow:
+				0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The top layer shadow */
+				5px 5px 0 0px #fff,
+				/* The second layer */
+				5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The second layer shadow */
+				10px 10px 0 0px #fff,
+				/* The third layer */
+				10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The third layer shadow */
+				15px 15px 0 0px #fff,
+				/* The fourth layer */
+				15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The fourth layer shadow */
+				20px 20px 0 0px #fff,
+				/* The fifth layer */
+				20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The fifth layer shadow */
+				25px 25px 0 0px #fff,
+				/* The fifth layer */
+				25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+			/* The fifth layer shadow */
+			margin-left: 10px;
+			margin-right: 45px;
+		}
+
+		.paper-big {
+			/* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+			box-shadow:
+				0px 0px 1px 1px rgba(0, 0, 0, 0.35);
+			/* The top layer shadow */
+
+			margin-left: 10px;
+			margin-right: 45px;
+		}
 
 
-	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-		5px 5px 0 0px #fff, /* The second layer */
-		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-		10px 10px 0 0px #fff, /* The third layer */
-		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-		margin-top: 5px;
-		margin-left: 10px;
-		margin-right: 30px;
-		margin-bottom: 5px;
-	}
-	
-	.vert-cent {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-	
-	hr
-	{
-		border: 0;
-		margin-bottom: 20px;
-		height: 1px;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	} 
+		.layered-paper {
+			/* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+			box-shadow:
+				0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The top layer shadow */
+				5px 5px 0 0px #fff,
+				/* The second layer */
+				5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The second layer shadow */
+				10px 10px 0 0px #fff,
+				/* The third layer */
+				10px 10px 1px 1px rgba(0, 0, 0, 0.35);
+			/* The third layer shadow */
+			margin-top: 5px;
+			margin-left: 10px;
+			margin-right: 30px;
+			margin-bottom: 5px;
+		}
 
-</style>
+		.vert-cent {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		hr {
+			border: 0;
+			margin-bottom: 20px;
+			height: 1px;
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		}
+	</style>
 
 
 
 	<title>High-Fidelity Texture Transfer Using Multi-Scale Depth-Aware Diffusion</title>
-	<meta property="og:image" content="Path to my teaser.png"> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:image" content="Path to my teaser.png">
+	<!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="Creative and Descriptive Paper Title.">
 	<meta property="og:description" content="Paper description.">
 
 	<!-- Get from Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async="" src="https://gzdang.github.io/textrans/"></script> 
+	<script async="" src="https://gzdang.github.io/textrans/"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'UA-75863369-6');
@@ -145,11 +168,10 @@
 			<div style="font-size:36px">High-Fidelity Texture Transfer Using</div>
 			<div style="font-size:36px">Multi-Scale Depth-Aware Diffusion</div>
 		</div>
-		
-		<table align="center" width="900px">
-			</table><table align="center" width="720px">
-				<tbody><tr>
-					
+
+		<table align="center" width="720px">
+			<tbody>
+				<tr>
 					<td align="center" width="100px">
 						<center>
 							<span style="font-size:18px"><a href="rzlin579@gmail.com">Rongzhen Lin,</a></span>
@@ -165,21 +187,58 @@
 							<span style="font-size:18px"><a href="haoxiaoyong975@gmail.com">Xiaoyong Hao,</a></span>
 						</center>
 					</td>
-
 					<td align="center" width="100px">
 						<center>
-							<span style="font-size:18px"><a href="https://zhouyangvcc.github.io/">Yang Zhou,</a></span>
+							<span style="font-size:18px"><a href="https://zhouyangvcc.github.io/">Yang Zhou*,</a></span>
 						</center>
 					</td>
-					<td align="center" width="100px">
+					<td align="center" width="80px">
 						<center>
 							<span style="font-size:18px"><a href="https://vcc.tech/~huihuang">Hui Huang</a></span>
 						</center>
 					</td>
 				</tr>
-			</tbody></table>
-			<table align="center" width="400px">
-				<tbody><tr>
+			</tbody>
+		</table>
+
+		<table align="center" width="720px">
+			<tbody>
+				<tr>
+					<td align="center" width="200px">
+						<center>
+							<span style="font-size:18px">Visual Computing Research Center, CSSE, Shenzhen
+								University</span>
+						</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table align="center" width="720px">
+			<tbody>
+				<tr>
+					<td align="center" width="200px">
+						<center>
+							<span style="font-size:18px">Eurographics Symposium on Rendering 2025</span>
+						</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table align="center" width="720px">
+			<tbody>
+				<tr>
+					<td align="center" width="200px">
+						<center>
+							<span style="font-size:12px">*Corresponding Author</span>
+						</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table align="center" width="400px" style="margin-top: 20px;">
+			<tbody>
+				<tr>
 					<td align="center" width="200px">
 						<center>
 							<span style="font-size:18px"><a href="#">[Paper(Coming soon)]</a></span>
@@ -191,39 +250,63 @@
 						</center>
 					</td>
 				</tr>
-			</tbody></table>
-		
+			</tbody>
+		</table>
+
 	</center>
 
 	<center>
 		<table align="center" width="850px">
-			<tbody><tr>
-				<td width="260px">
-					<center>
-						<img class="round" style="width:900px; margin-top: 20px;" src="./static/images/teaser.png">
-					</center>
-				</td>
-			</tr>
-		</tbody></table>
+			<tbody>
+				<tr>
+					<td width="260px">
+						<center>
+							<img class="round" style="width:900px; margin-top: 20px;" src="./static/images/teaser.png">
+						</center>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 		<table align="center" width="850px">
-			<tbody><tr>
-				<td>
-					Our method can successfully transfer the texture from a reference shape to other shapes with significantly variant topologies (left). It can also texture the same shape with different source textures from other 3D meshes (right).
-				</td>
-			</tr>
-		</tbody></table>
+			<tbody>
+				<tr>
+					<td>
+						Our method can successfully transfer the texture from a reference shape to other shapes with
+						significantly variant topologies (left). It can also texture the same shape with different
+						source textures from other 3D meshes (right).
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</center>
 
 	<hr>
 
-	<center><h1>Abstract</h1></center><table align="center" width="850px">
-		
-		<tbody><tr>
-			<td>
-				Textures are a key component of 3D assets. Transferring textures from one shape to another, without user interaction or additional semantic guidance, is a classical yet challenging problem. It can enhance the diversity of existing shape collections, augmenting their application scope. This paper proposes an innovative 3D texture transfer framework that leverages the generative power of pre-trained diffusion models. While diffusion models have achieved significant success in 2D image generation, their application to 3D domains faces great challenges in preserving coherence across different viewpoints. Addressing this issue, we designed a multi-scale generation framework to optimize the UV maps coarse-to-fine. To ensure multi-view consistency, we use depth info as geometric guidance; meanwhile, a novel consistency loss is proposed to further constrain the color coherence and reduce artifacts. Experimental results demonstrate that our multi-scale framework not only produces high-quality texture transfer results but also excels in handling complex shapes while preserving correct semantic correspondences. Compared to existing techniques, our method achieves improvements in both consistency and texture clarity, as well as time efficiency. 
-			</td>
-		</tr>
-	</tbody></table>
+	<center>
+		<h1>Abstract</h1>
+	</center>
+	<table align="center" width="850px">
+
+		<tbody>
+			<tr>
+				<td>
+					Textures are a key component of 3D assets. Transferring textures from one shape to another, without
+					user interaction or additional semantic guidance, is a classical yet challenging problem. It can
+					enhance the diversity of existing shape collections, augmenting their application scope. This paper
+					proposes an innovative 3D texture transfer framework that leverages the generative power of
+					pre-trained diffusion models. While diffusion models have achieved significant success in 2D image
+					generation, their application to 3D domains faces great challenges in preserving coherence across
+					different viewpoints. Addressing this issue, we designed a multi-scale generation framework to
+					optimize the UV maps coarse-to-fine. To ensure multi-view consistency, we use depth info as
+					geometric guidance; meanwhile, a novel consistency loss is proposed to further constrain the color
+					coherence and reduce artifacts. Experimental results demonstrate that our multi-scale framework not
+					only produces high-quality texture transfer results but also excels in handling complex shapes while
+					preserving correct semantic correspondences. Compared to existing techniques, our method achieves
+					improvements in both consistency and texture clarity, as well as time efficiency.
+				</td>
+			</tr>
+		</tbody>
+	</table>
 	<br>
 
 	<!-- <hr> -->
@@ -243,25 +326,34 @@
 	</table> -->
 	<hr>
 
-	<center><h1>Method</h1></center>
+	<center>
+		<h1>Method</h1>
+	</center>
 
 	<center>
-			</center><table align="center" width="420px">
-		<tbody><tr>
+	</center>
+	<table align="center" width="420px">
+		<tbody>
+			<tr>
 				<td>
 				</td>
 			</tr>
-		
-	</tbody></table>
+
+		</tbody>
+	</table>
 	<table align="center" width="400px">
-		<tbody><tr>
-			<td align="center" width="400px">
-				<center>
-					</center></td><td><img class="round" style="width:500px" src="./static/images/overview.png"></td>
-				
-			
-		</tr>
-	</tbody></table>
+		<tbody>
+			<tr>
+				<td align="center" width="400px">
+					<center>
+					</center>
+				</td>
+				<td><img class="round" style="width:500px" src="./static/images/overview.png"></td>
+
+
+			</tr>
+		</tbody>
+	</table>
 	<!-- <table align=center width=400px>
 		<center>
 			<tr>
@@ -280,91 +372,131 @@
 	</table> -->
 
 	<hr>
-	<center><h1>A results gallery of our method</h1></center>
+	<center>
+		<h1>A results gallery of our method</h1>
+	</center>
 
 	<center>
-			</center><table align="center" width="420px">
-		<tbody><tr>
+	</center>
+	<table align="center" width="420px">
+		<tbody>
+			<tr>
 				<td>
 				</td>
 			</tr>
-		
-	</tbody></table>
+
+		</tbody>
+	</table>
 	<table align="center" width="400px">
-		<tbody><tr>
-			<td align="center" width="400px">
-				<center>
-					</center></td><td><img class="round" style="width:1000px" src="./static/images/res.png"></td>
-				
-			
-		</tr>
-	</tbody></table>
+		<tbody>
+			<tr>
+				<td align="center" width="400px">
+					<center>
+					</center>
+				</td>
+				<td><img class="round" style="width:1000px" src="./static/images/res.png"></td>
+
+
+			</tr>
+		</tbody>
+	</table>
 	<br>
 
 	<hr>
-	<center><h1>Qualitative comparison with state-of-the-art diffusion-based methods</h1></center>
+	<center>
+		<h1>Qualitative comparison with state-of-the-art diffusion-based methods</h1>
+	</center>
 
 	<table align="center" width="400px">
-		<tbody><tr>
-			<td align="center" width="400px">
-				<center>
-					</center></td><td><img class="round" style="width:1000px" src="./static/images/compare.png"></td>
-		</tr>
-	</tbody></table>
+		<tbody>
+			<tr>
+				<td align="center" width="400px">
+					<center>
+					</center>
+				</td>
+				<td><img class="round" style="width:1000px" src="./static/images/compare.png"></td>
+			</tr>
+		</tbody>
+	</table>
 
 	<center>
-		</center><table align="center" width="850px">
-	<tbody><tr>
-			<td>
-				Qualitative comparison with state-of-the-art diffusion-based texture generation methods. Our method not only produces high-fidelity textures but also preserves correct semantic correspondences to the reference. In contrast, the other methods either lose fine details or are not coherent to the reference texture.
-			</td>
-		</tr>
-	
-	</tbody></table>
+	</center>
+	<table align="center" width="850px">
+		<tbody>
+			<tr>
+				<td>
+					Qualitative comparison with state-of-the-art diffusion-based texture generation methods. Our method
+					not only produces high-fidelity textures but also preserves correct semantic correspondences to the
+					reference. In contrast, the other methods either lose fine details or are not coherent to the
+					reference texture.
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
 	<br>
 	<hr>
 
-	<center><h1>Paper and Supplementary Material</h1></center><table align="center" width="450px">
-		
-		<tbody><tr>
-			<td><a href="https://https://gzdang.github.io/textrans/"><img class="layered-paper-big" style="height:175px" src="./static/images/paper.png"></a></td>
-			<td><span style="font-size:14pt">Rongzhen Lin, Zichong Chen, Xiaoyong Hao, Yang Zhou, Hui Huang.
-				<br>
-				<b>High-Fidelity Texture Transfer Using Multi-Scale Depth-Aware Diffusion.</b><br>
-				Eurographics Symposium on Rendering 2025.<br>
-				<!--(hosted on <a href="">ArXiv</a>)--><br>
-				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
-				<span style="font-size:4pt"><a href="https://https://gzdang.github.io/textrans/"><br></a>
-				</span>
-			</span></td>
-		</tr>
-	</tbody></table>
+	<center>
+		<h1>Paper and Supplementary Material</h1>
+	</center>
+	<table align="center" width="450px">
+
+		<tbody>
+			<tr>
+				<td><a href="https://https://gzdang.github.io/textrans/"><img class="layered-paper-big"
+							style="height:175px" src="./static/images/paper.png"></a></td>
+				<td><span style="font-size:14pt">Rongzhen Lin, Zichong Chen, Xiaoyong Hao, Yang Zhou, Hui Huang.
+						<br>
+						<b>High-Fidelity Texture Transfer Using Multi-Scale Depth-Aware Diffusion.</b><br>
+						Eurographics Symposium on Rendering 2025.<br>
+						<!--(hosted on <a href="">ArXiv</a>)--><br>
+						<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+						<span style="font-size:4pt"><a href="https://https://gzdang.github.io/textrans/"><br></a>
+						</span>
+					</span></td>
+			</tr>
+		</tbody>
+	</table>
 	<br>
 
 	<table align="center" width="600px">
-		<tbody><tr>
-			<td><span style="font-size:14pt"><center>
-				<a href="https://https://gzdang.github.io/textrans/bibtex.txt">[Bibtex]</a>
-			</center></span></td>
-		</tr>
-	</tbody></table>
+		<tbody>
+			<tr>
+				<td><span style="font-size:14pt">
+						<center>
+							<a href="https://https://gzdang.github.io/textrans/bibtex.txt">[Bibtex]</a>
+						</center>
+					</span></td>
+			</tr>
+		</tbody>
+	</table>
 
 	<hr>
 	<br>
 
 	<table align="center" width="900px">
-		<tbody><tr>
-			<td width="400px">
-				<left>
-					<center><h1>Acknowledgements</h1></center>
-					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
-				</left>
-			</td>
-		</tr>
-	</tbody></table>
+		<tbody>
+			<tr>
+				<td width="400px">
+					<left>
+						<center>
+							<h1>Acknowledgements</h1>
+						</center>
+						This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+						and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a
+							href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be
+						found <a href="https://github.com/richzhang/webpage-template">here</a>.
+					</left>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 
-<br>
+	<br>
 
 
 
-</body></html>
+</body>
+
+</html>
