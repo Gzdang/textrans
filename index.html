@@ -1,6 +1,6 @@
 
 <!-- saved from url=(0104)https://johnparkerlee.github.io/Deformable-Few-shot-Face-Cartoonization-via-Local-to-Global-Translation/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Deformable Few-shot Face Cartoonization via Local to Global Translation_files/jsapi" type="text/javascript"></script> 
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./static/js/jsapi" type="text/javascript"></script> 
 <script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
 <style type="text/css">
@@ -14,7 +14,7 @@
 	}
 	
 	h1 {
-		font-size:32px;
+		font-size:24px;
 		font-weight:300;
 	}
 	
@@ -113,14 +113,16 @@
 	hr
 	{
 		border: 0;
+		margin-bottom: 20px;
 		height: 1px;
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	}
+	} 
+
 </style>
 
 
 
-	<title>Deformable Few-shot Face Cartoonization via Local to Global Translation</title>
+	<title>High-Fidelity Texture Transfer Using Multi-Scale Depth-Aware Diffusion</title>
 	<meta property="og:image" content="Path to my teaser.png"> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="Creative and Descriptive Paper Title.">
 	<meta property="og:description" content="Paper description.">
@@ -140,37 +142,53 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Deformable Few-shot Face Cartoonization via Local to Global Translation</span>
-		<table align="center" width="600px">
+		<div style="margin-bottom: 10px;">
+			<div style="font-size:36px">High-Fidelity Texture Transfer Using</div>
+			<div style="font-size:36px">Multi-Scale Depth-Aware Diffusion</div>
+		</div>
+		
+		<table align="center" width="720px">
 			</table><table align="center" width="600px">
 				<tbody><tr>
+					
 					<td align="center" width="100px">
 						<center>
-							<span style="font-size:24px"><a href="https://zhouyangvcc.github.io/">Yang Zhou</a></span>
+							<span style="font-size:18px"><a href="rzlin579@gmail.com">Rongzhen Lin</a></span>
 						</center>
 					</td>
 					<td align="center" width="100px">
 						<center>
-							<span style="font-size:24px"><a href="mailto:johnparker@163.com">Shengshu Li</a></span>
+							<span style="font-size:18px"><a href="chenzichong01@gmail.com">Zichong Chen</a></span>
 						</center>
 					</td>
 					<td align="center" width="100px">
 						<center>
-							<span style="font-size:24px"><a href="https://vcc.tech/~huihuang">Hui Huang</a></span>
+							<span style="font-size:18px"><a href="haoxiaoyong975@gmail.com">Xiaoyong Hao</a></span>
+						</center>
+					</td>
+
+					<td align="center" width="100px">
+						<center>
+							<span style="font-size:18px"><a href="https://zhouyangvcc.github.io/">Yang Zhou</a></span>
+						</center>
+					</td>
+					<td align="center" width="100px">
+						<center>
+							<span style="font-size:18px"><a href="https://vcc.tech/~huihuang">Hui Huang</a></span>
 						</center>
 					</td>
 				</tr>
 			</tbody></table>
-			<table align="center" width="250px">
+			<table align="center" width="400px">
 				<tbody><tr>
 					<td align="center" width="120px">
 						<center>
-							<span style="font-size:24px"><a href="https://ieeexplore.ieee.org/document/10903675">[Paper]</a></span>
+							<span style="font-size:18px"><a href="https://ieeexplore.ieee.org/document/10903675">[Paper]</a></span>
 						</center>
 					</td>
-					<td align="center" width="120px">
+					<td align="center" width="200px">
 						<center>
-							<span style="font-size:24px"><a href="https://github.com/JohnParkerLee/Deformable-Few-shot-Face-Cartoonization-via-Local-to-Global-Translation/tree/main">[GitHub]</a></span><br>
+							<span style="font-size:18px"><a>[Code(Coming soon)]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -183,7 +201,7 @@
 			<tbody><tr>
 				<td width="260px">
 					<center>
-						<img class="round" style="width:900px" src="./Deformable Few-shot Face Cartoonization via Local to Global Translation_files/teaser.png">
+						<img class="round" style="width:900px; margin-top: 20px;" src="./static/images/teaser.png">
 					</center>
 				</td>
 			</tr>
@@ -191,7 +209,7 @@
 		<table align="center" width="850px">
 			<tbody><tr>
 				<td>
-					Given a few style examples of Amedeo portraiture (top left), our deformable few-shot face cartoonization model can translate input images with high quality in style and high fidelity in identity, and more importantly, with favorable shape deformation (e.g., face-elongation). Existing few-shot learning approaches, such as <a href="https://github.com/utkarshojha/few-shot-gan-adaptation">[1]</a> (denoted as psp+RSSA), MTG <a href="https://github.com/ZPdesu/MindTheGap">[2]</a>, and JoJoGAN <a href="https://github.com/mchong6/JoJoGAN">[3]</a>, either fall into overfitting or fail to reproduce this characteristic deformation presented in the examples. More target styles we experimented with are shown on the right and were all trained with only 10 style examples.
+					Our method can successfully transfer the texture from a reference shape to other shapes with significantly variant topologies (left). It can also texture the same shape with different source textures from other 3D meshes (right).
 				</td>
 			</tr>
 		</tbody></table>
@@ -203,7 +221,7 @@
 		
 		<tbody><tr>
 			<td>
-				Cartoonizing portrait images is a stylish and eye-catching application in both computer vision and graphics. We aimed to train a face cartoonization model using very few (e.g., 5~10) style examples. The main difficulty in this challenging task lies in producing stylizations of high quality while preserving the identity of the input, particularly when the style examples contain strong exaggerations. To address this, we propose a novel cross-domain center loss for few-shot generative adversarial network (GAN) adaptation, which forces the distribution of the target domain to be similar to that of the source. We then employ it to solve this few-shot problem along with a two-stage strategy. Stage I generates an intermediate cartoonization for the input, where we first stylize the individual facial components locally and then deform them to mimic the desired exaggeration under the guidance of landmarks. Stage II focuses on global refinement of the intermediate image. First, we adapt a pretrained StyleGAN model using the proposed cross-domain center loss to the target domain defined by a few examples. Subsequently, the intermediate cartoonization from Stage I can be holistically refined through GAN inversion. The generative power of StyleGAN guarantees high image quality, while the local translation and landmark-guided deformation applied to facial components provide high identity fidelity. Experiments show that the proposed method outperforms state-of-the-art few-shot stylization approaches both qualitatively and quantitatively.
+				Textures are a key component of 3D assets. Transferring textures from one shape to another, without user interaction or additional semantic guidance, is a classical yet challenging problem. It can enhance the diversity of existing shape collections, augmenting their application scope. This paper proposes an innovative 3D texture transfer framework that leverages the generative power of pre-trained diffusion models. While diffusion models have achieved significant success in 2D image generation, their application to 3D domains faces great challenges in preserving coherence across different viewpoints. Addressing this issue, we designed a multi-scale generation framework to optimize the UV maps coarse-to-fine. To ensure multi-view consistency, we use depth info as geometric guidance; meanwhile, a novel consistency loss is proposed to further constrain the color coherence and reduce artifacts. Experimental results demonstrate that our multi-scale framework not only produces high-quality texture transfer results but also excels in handling complex shapes while preserving correct semantic correspondences. Compared to existing techniques, our method achieves improvements in both consistency and texture clarity, as well as time efficiency. 
 			</td>
 		</tr>
 	</tbody></table>
@@ -240,7 +258,7 @@
 		<tbody><tr>
 			<td align="center" width="400px">
 				<center>
-					</center></td><td><img class="round" style="width:900px" src="./Deformable Few-shot Face Cartoonization via Local to Global Translation_files/overview.png"></td>
+					</center></td><td><img class="round" style="width:500px" src="./static/images/overview.png"></td>
 				
 			
 		</tr>
@@ -277,7 +295,7 @@
 		<tbody><tr>
 			<td align="center" width="400px">
 				<center>
-					</center></td><td><img class="round" style="width:1000px" src="./Deformable Few-shot Face Cartoonization via Local to Global Translation_files/our_result.png"></td>
+					</center></td><td><img class="round" style="width:1000px" src="./static/images/res.png"></td>
 				
 			
 		</tr>
@@ -285,15 +303,13 @@
 	<br>
 
 	<hr>
-	<center><h1>Qualitative comparison on realistic styles(Style#1-Style#4)</h1></center>
+	<center><h1>Qualitative comparison on realistic styles</h1></center>
 
 	<table align="center" width="400px">
 		<tbody><tr>
 			<td align="center" width="400px">
 				<center>
-					</center></td><td><img class="round" style="width:1000px" src="./Deformable Few-shot Face Cartoonization via Local to Global Translation_files/comparison.png"></td>
-				
-			
+					</center></td><td><img class="round" style="width:1000px" src="./static/images/compare.png"></td>
 		</tr>
 	</tbody></table>
 
@@ -301,35 +317,10 @@
 		</center><table align="center" width="850px">
 	<tbody><tr>
 			<td>
-				Qualitative comparison with state-of-the-art few-shot stylization methods on realistic styles (Sty#1-#4). FewAda and RSSA seemly fall into overfitting, showing limited diversity across the styles. MTG and JoJoGAN faithfully preserve the input identity but lose some style features exhibited in the examples. Our results are visually similar to those of MTG and JoJoGAN, and more fine stylistic details can be seen if checked carefully. Again, FewAda and RSSA lose the identity of the input. MTG and JoJoGAN still faithfully preserve the input identity while missing the characteristic style features mentioned above. Our method, in contrast, reproduces these stylistic features plausibly while preserving the identity as much as possible. Best viewed zoomed-in.
+				Qualitative comparison with state-of-the-art diffusion-based texture generation methods. Our method not only produces high-fidelity textures but also preserves correct semantic correspondences to the reference. In contrast, the other methods either lose fine details or are not coherent to the reference texture.
 			</td>
 		</tr>
 	
-	</tbody></table>
-	<br>
-	<hr>
-	
-
-	<center><h1>Qualitative comparison on exaggerated styles(Style#5-Style#8)</h1></center>
-
-	
-	<table align="center" width="400px">
-		<tbody><tr>
-			<td align="center" width="400px">
-				<center>
-					</center></td><td><img class="round" style="width:1000px" src="./Deformable Few-shot Face Cartoonization via Local to Global Translation_files/comparison2.png"></td>
-				
-			
-		</tr>
-	</tbody></table>
-	<center>
-			</center><table align="center" width="850px">
-		<tbody><tr>
-				<td>
-					Qualitative comparison with state-of-the-art few-shot stylization methods on exaggerated styles (Sty#5-#8). Prominent characteristic features are shown in the examples, e.g., elongation of faces in Amedeo (Sty#5), widening of eyes in Toonify (Sty#6), rounding curve of facial components in Female Cartoon (Sty#7) and over-heavy contours in Fernand Leger (Sty#8). Best viewed zoomed-in.
-				</td>
-			</tr>
-		
 	</tbody></table>
 	<br>
 	<hr>
@@ -337,13 +328,14 @@
 	<center><h1>Paper and Supplementary Material</h1></center><table align="center" width="450px">
 		
 		<tbody><tr>
-			<td><a href="https://johnparkerlee.github.io/Deformable-Few-shot-Face-Cartoonization-via-Local-to-Global-Translation/"><img class="layered-paper-big" style="height:175px" src="./Deformable Few-shot Face Cartoonization via Local to Global Translation_files/paper.png"></a></td>
-			<td><span style="font-size:14pt">Yang, Zhou. Shengshu, Li. Hui, Huang.<br>
-				<b>Deformable Few-shot Face Cartoonization via Local to Global Translation.</b><br>
-				Springer Journal of Computational Visual Media, 2025.<br>
+			<td><a href="https://https://gzdang.github.io/textrans/"><img class="layered-paper-big" style="height:175px" src="./static/images/paper.png"></a></td>
+			<td><span style="font-size:14pt">Rongzhen Lin, Zichong Chen, Xiaoyong Hao, Yang Zhou, Hui Huang.
+				<br>
+				<b>High-Fidelity Texture Transfer Using Multi-Scale Depth-Aware Diffusion.</b><br>
+				Eurographics Symposium on Rendering 2025.<br>
 				<!--(hosted on <a href="">ArXiv</a>)--><br>
 				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
-				<span style="font-size:4pt"><a href="https://johnparkerlee.github.io/Deformable-Few-shot-Face-Cartoonization-via-Local-to-Global-Translation/"><br></a>
+				<span style="font-size:4pt"><a href="https://https://gzdang.github.io/textrans/"><br></a>
 				</span>
 			</span></td>
 		</tr>
@@ -353,7 +345,7 @@
 	<table align="center" width="600px">
 		<tbody><tr>
 			<td><span style="font-size:14pt"><center>
-				<a href="https://johnparkerlee.github.io/Deformable-Few-shot-Face-Cartoonization-via-Local-to-Global-Translation/resources/bibtex.txt">[Bibtex]</a>
+				<a href="https://https://gzdang.github.io/textrans/bibtex.txt">[Bibtex]</a>
 			</center></span></td>
 		</tr>
 	</tbody></table>
@@ -366,8 +358,6 @@
 			<td width="400px">
 				<left>
 					<center><h1>Acknowledgements</h1></center>
-					We thank the reviewers for their insightful suggestions. Special thanks go to artist Dacheng for providing the cartoon portraits. This work was supported in parts by NSFC (U21B2023, U2001206), Guangdong Natural Science Foundation (2022A1515010221), DEGP Innovation Team Program (2022KCXTD025), Shenzhen Science and Technology Program (KQTD20210811090044003, RCJC20200714114435012), and Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ).
-					<br>
 					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
 				</left>
 			</td>
